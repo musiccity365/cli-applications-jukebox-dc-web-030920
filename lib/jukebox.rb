@@ -1,5 +1,4 @@
 # Add your code here
-require 'pry'
 
 songs = [
   "Phoenix - 1901",
