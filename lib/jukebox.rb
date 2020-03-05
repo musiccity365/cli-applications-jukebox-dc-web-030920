@@ -21,9 +21,9 @@ def help
 end
 
 def list(songs)
-  songs.each_with_index { |song, index|
-    puts (index + 1).to_s + ". " + song
-    }
+  songs.each_with_index do |song, track|
+    puts "#{track + 1}. #{song}"
+  end
 end
 
 def play(songs)
@@ -44,7 +44,7 @@ def play(songs)
 end
 
 def exit_jukebox
-  puts "Goodbye"
+  puts "Goodbye!"
 end
 
 def run(songs)
