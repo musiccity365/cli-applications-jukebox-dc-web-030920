@@ -50,7 +50,8 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(songs)
+def run(my_songs)
+  #this method is the same as in jukebox.rb	  #this method is the same as in jukebox.rb
   help
   input = ""
   while input != "exit"
@@ -58,9 +59,9 @@ def run(songs)
     input = gets.chomp
     case input
     when "play"
-      play(song)
+      play(my_songs)
     when "list"
-      list(songs)
+      list(my_songs)
     when "help"
       help
     when "exit"
@@ -69,4 +70,5 @@ def run(songs)
       puts "Invalid input, please try again"
     end
   end
+  exit_jukebox
 end 
