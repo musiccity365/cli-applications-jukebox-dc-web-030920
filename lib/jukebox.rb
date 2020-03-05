@@ -52,7 +52,6 @@ end
 
 def run(my_songs)
   #this method is the same as in jukebox.rb	  #this method is the same as in jukebox.rb
-  help
   input = ""
   while input != "exit"
     puts "Please enter a command:"
